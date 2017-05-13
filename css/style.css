@@ -1,0 +1,126 @@
+body {
+	background: #282F36;
+	
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 70px;
+}
+
+.container {
+	height: 600px;
+	width: 615px;
+	margin: 50px auto;
+	background: #282F36;
+	display: flex;
+	position: relative;
+}
+
+.section {
+
+	padding: 0px;
+}
+
+.section-1 {
+
+margin-right: -6px;
+}
+
+
+.section-2 {
+
+	padding: 0px;
+}
+
+
+
+.block {
+	background: clear;
+	height: 300px;
+	width: 300px;
+	display: inline-flex;
+	cursor: pointer;
+	
+}
+
+#circle {
+	display: inline-flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	height: 185px;
+	width: 190px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 50%;
+	left: 49%;
+	transform: translate(-50%, -49%);
+	z-index: 100;
+	font-size: 35px;
+	color: #292F36;
+	font-weight: bold;
+	-webkit-filter: drop-shadow(0px 0px 25px #292F36);
+	
+}
+
+.switch-container {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.switch-block {
+margin: 0px 20px;
+
+}
+
+.switch-label {
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 25px;
+	padding: 0px 20px 0px 0px;
+}
+
+.clickable {
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.unclickable {
+	pointer-events: none;
+}
+
+#square-1 {
+
+	background: #F33D59;
+
+}
+
+#square-2 {
+
+background: #3197BC;
+	
+}
+
+
+#square-3 {
+background: #49B09D;
+	
+
+}
+
+
+#square-4 {
+background: #ECC957;
+
+}
+
+#count-div {
+	text-align: center;
+}
+
+
+

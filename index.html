@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html>
+
+<head>
+<link href="css/style.css" rel="stylesheet">
+<link href="js/dist/switchery.css" rel="stylesheet">	
+</head>
+
+<body>
+	
+
+	
+	<h1>Simon Game</h1>
+
+<div class="switch-container">
+
+	
+	<div class="switch-block">
+		<div><label class="switch-label">Start:</label></div>
+		<div><input type="checkbox" class="js-check-change1"></input>
+		</div>
+	</div>
+
+
+	<div class="switch-block">
+		<div>
+			<div><label class="switch-label">On:</label></div>
+			<div><input type="checkbox" class="js-check-change2"></input>
+			</div>
+		</div>
+	</div>
+	<div class="switch-block">
+		<div>
+			<div><label class="switch-label">Strict:</label></div>
+			<div><input type="checkbox" class="js-check-change3"></input>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+	
+	<div class="container">
+		<div id="circle" style=
+			 "background:url('img/circle.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 50%;
+	left: 49%;
+	transform: translate(-50%, -49%);
+	z-index: 100;">
+			<div>
+			<div id="count-div">Count</div>
+			<div style="text-align:center" id="count-value">--</div>
+			</div>
+		</div>
+		
+		
+		<div class="section section-1">
+			<audio src="sounds/error.mp3" id="error-sound"></audio>
+			<audio src="sounds/win.mp3" id="win-sound"></audio>
+			<div class="block unclickable" id="square-1" onmousedown="blockClicked(this)">
+			<audio id="square-1-audio" src="sounds/sound-1.mp3" autostart="false" preload="auto"></audio>
+			</div>
+			<div class="block unclickable" id="square-2" onmousedown="blockClicked(this)">
+				<audio id="square-2-audio" src="sounds/sound-2.mp3" autostart="false" preload="auto"></audio>
+			</div>
+		</div>
+		<div class="section section-2">
+			<div class="block unclickable" id="square-3" onmousedown="blockClicked(this)">
+			<audio id="square-3-audio" src="sounds/sound-3.mp3" autostart="false" preload="auto"></audio>
+			</div>
+			<div class="block unclickable" id="square-4" onmousedown="blockClicked(this)">
+				<audio id="square-4-audio" src="sounds/sound-4.mp3" autostart="false" preload="auto"></audio>
+			</div>
+		</div>
+
+
+	</div>
+
+</body>
+
+<footer>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/dist/switchery.js"></script>
+<script src="js/main.js"></script>	
+</footer>
+
+</html>
